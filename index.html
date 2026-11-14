@@ -26,6 +26,28 @@
     @media(max-width:900px){.navlinks{gap:15px}.navlinks a{font-size:11px}.intro-grid{gap:45px}.program-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.experience-grid{gap:35px}.faq-grid{gap:40px}}
     @media(max-width:700px){.container{width:min(100% - 34px,540px)}.topbar .container{justify-content:center}.topbar .toplinks{display:none}.nav{height:68px}.brand-mark{width:37px;height:37px}.brand-name{font-size:11px}.nav-actions>.btn{display:none}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:10px 22px 22px;border-bottom:1px solid var(--line);box-shadow:0 18px 25px rgba(16,28,45,.08)}.navlinks.open{display:grid;gap:0}.navlinks a{padding:13px 0;border-bottom:1px solid var(--line);font-size:13px}.hero,.hero-inner{min-height:680px}.hero:before{background:linear-gradient(90deg,rgba(9,20,34,.94),rgba(9,20,34,.68)),url("https://media.collegeinnepal.com/cosmos-building.png") center/cover}.hero-inner{padding:60px 0 170px}.hero h1{font-size:clamp(44px,12vw,64px)}.hero-copy>p{font-size:14px}.hero-meta .container{grid-template-columns:1fr 1fr}.metric{padding:13px 10px;border-bottom:1px solid rgba(255,255,255,.13)}.metric:first-child{padding-left:10px}.metric strong{font-size:22px}.metric span{font-size:9px}.section{padding:70px 0}.section-head{display:block;margin-bottom:28px}.section-head p{margin-top:15px}.intro-grid,.experience-grid,.admission-grid,.faq-grid,.story-grid{grid-template-columns:1fr;gap:34px}.intro-image{height:340px;margin-right:12px}.image-note{right:-12px;bottom:15px;padding:15px}.intro-points{gap:15px}.program-grid{grid-template-columns:1fr}.program-card{min-height:235px}.experience-photo{height:330px}.story-feature{min-height:330px}.story-mini{min-height:155px}.enquiry-card{padding:25px 20px}.footer-grid{grid-template-columns:1fr 1fr;gap:30px 20px}.footer-brand{grid-column:1/-1}.copyright{display:block;line-height:1.8}.copyright span{display:block}.faq-grid{gap:20px}}
 
+
+    /* Admission announcement popup */
+    .admission-pop{position:fixed;inset:0;z-index:150;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(5,13,23,.76);backdrop-filter:blur(5px)}
+    .admission-pop.is-open{display:flex;animation:admissionFade .25s ease both}
+    .admission-pop-card{position:relative;display:grid;grid-template-columns:.92fr 1.08fr;width:min(760px,100%);min-height:390px;background:#fff;box-shadow:0 28px 90px rgba(0,0,0,.32);overflow:hidden;animation:admissionRise .35s cubic-bezier(.2,.75,.25,1) both}
+    .admission-pop-visual{position:relative;min-height:100%;background:linear-gradient(0deg,rgba(8,21,37,.58),rgba(8,21,37,.08)),url("https://media.collegeinnepal.com/cosmos-building.png") center/cover}
+    .admission-pop-visual:after{content:"COSMOS COLLEGE";position:absolute;left:24px;bottom:22px;color:white;font:800 12px Manrope;letter-spacing:.15em}
+    .admission-pop-copy{padding:48px 38px 38px;display:flex;flex-direction:column;justify-content:center}
+    .admission-pop-kicker{display:inline-flex;align-self:flex-start;padding:7px 11px;background:#fff0f1;color:#c7192d;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    .admission-pop-copy h2{font:800 clamp(30px,4vw,43px)/1.05 Manrope;color:#171717;letter-spacing:-.055em;margin:18px 0 12px}
+    .admission-pop-copy h2 em{font-style:normal;color:#c7192d}
+    .admission-pop-copy p{font-size:13px;line-height:1.75;color:#626b76;margin:0 0 22px}
+    .admission-pop-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .admission-pop-actions .btn{font-size:11px}
+    .admission-pop-close{position:absolute;right:13px;top:12px;width:36px;height:36px;border:0;border-radius:50%;background:#f1f2f3;color:#303943;font-size:23px;line-height:1;z-index:2}
+    .admission-pop-close:hover{background:#c7192d;color:#fff}
+    .admission-pop-note{font-size:10px!important;margin:16px 0 0!important;color:#89919b!important}
+    @keyframes admissionFade{from{opacity:0}to{opacity:1}}
+    @keyframes admissionRise{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+    @media(max-width:600px){.admission-pop{padding:14px}.admission-pop-card{grid-template-columns:1fr;max-width:420px}.admission-pop-visual{min-height:155px}.admission-pop-visual:after{left:18px;bottom:15px}.admission-pop-copy{padding:26px 22px 24px}.admission-pop-copy h2{font-size:34px;margin:13px 0 9px}.admission-pop-copy p{font-size:12px;margin-bottom:17px}.admission-pop-actions{display:grid}.admission-pop-actions .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){.admission-pop.is-open,.admission-pop-card{animation:none}}
+
     :focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
     .navlinks a{position:relative}.navlinks a:after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:2px;background:var(--gold);transition:width .25s}.navlinks a:hover:after{width:100%}
     .hero-copy{animation:heroEnter .85s cubic-bezier(.2,.75,.25,1) both}
@@ -144,8 +166,51 @@
   </main>
   <footer id="contact"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="#home"><img src="https://www.saudharish.com.np/IMAGES/cosmos_logo.png" alt="Cosmos College logo" style="width:210px;height:auto;max-height:56px;object-fit:contain"></a><p>Preparing curious minds and capable professionals through engineering, architecture and management education.</p><div class="prototype-note">Independent website redesign concept · Not an official college website</div></div><div class="footer-col"><h4>Explore</h4><a href="#about">About Cosmos</a><a href="#programs">Academic programs</a><a href="#people">Faculty and team</a><a href="#facilities">Facilities</a><a href="#research">Research</a><a href="#activities">Student activities</a><a href="#updates">News and notices</a><a href="#resources">Student services</a></div><div class="footer-col"><h4>Admissions</h4><a href="#admissions">How to apply</a><a href="#scholarships">Scholarships</a><a href="#career">Careers</a><a href="#faq">FAQs</a></div><div class="footer-col"><h4>Get in touch</h4><p>Sitapaila-15, Kathmandu, Nepal</p><a href="tel:+97715970000">01-5970000</a><a href="mailto:info@cosmoscollege.edu.np">info@cosmoscollege.edu.np</a><a href="https://www.cosmoscollege.edu.np/" target="_blank" rel="noopener">Current college website ↗</a></div></div><div class="copyright"><span>© 2026 Cosmos College redesign concept.</span><span>Designed to make the next step clearer.</span></div></div></footer>
   <div class="modal-backdrop" id="programModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><button class="modal-close" id="modalClose" aria-label="Close dialog">×</button><div class="eyebrow">Program overview</div><h3 id="modalTitle">Explore a program</h3><p id="modalText">Contact the college for the latest curriculum, eligibility, seat availability and admission information.</p><a class="btn btn-dark" href="#admissions" id="modalApply">Ask about this program ↗</a></div></div>
+
+  <div class="admission-pop" id="admissionPopup" role="dialog" aria-modal="true" aria-labelledby="admissionPopupTitle" aria-describedby="admissionPopupDescription">
+    <div class="admission-pop-card">
+      <button class="admission-pop-close" id="admissionPopupClose" type="button" aria-label="Close admission announcement">×</button>
+      <div class="admission-pop-visual" role="img" aria-label="Cosmos College campus building"></div>
+      <div class="admission-pop-copy">
+        <span class="admission-pop-kicker">Admissions · 2083</span>
+        <h2 id="admissionPopupTitle">Your next chapter <em>starts here.</em></h2>
+        <p id="admissionPopupDescription">Admissions are open at Cosmos College of Management and Technology. Explore engineering, architecture and management programmes, and contact the college to confirm current eligibility and seat availability.</p>
+        <div class="admission-pop-actions">
+          <a class="btn btn-gold" href="https://www.cosmoscollege.edu.np/enroll-now" target="_blank" rel="noopener">Apply for admission <span class="arrow">↗</span></a>
+          <a class="btn btn-dark" href="#programs" id="admissionExplore">Explore programmes</a>
+        </div>
+        <p class="admission-pop-note">For current deadlines, fees and available seats, please confirm directly with the college.</p>
+      </div>
+    </div>
+  </div>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script>
+
+    // Show the admissions announcement once per browser tab/session.
+    const admissionPopup=document.getElementById('admissionPopup');
+    const admissionPopupClose=document.getElementById('admissionPopupClose');
+    let admissionPopupOpener=null;
+    function openAdmissionPopup(){
+      if(!admissionPopup||sessionStorage.getItem('cosmosAdmissionPopupSeen')==='1')return;
+      admissionPopupOpener=document.activeElement;
+      admissionPopup.classList.add('is-open');
+      document.body.style.overflow='hidden';
+      sessionStorage.setItem('cosmosAdmissionPopupSeen','1');
+      admissionPopupClose.focus();
+    }
+    function closeAdmissionPopup(){
+      if(!admissionPopup)return;
+      admissionPopup.classList.remove('is-open');
+      document.body.style.overflow='';
+      if(admissionPopupOpener&&typeof admissionPopupOpener.focus==='function')admissionPopupOpener.focus();
+    }
+    admissionPopupClose.addEventListener('click',closeAdmissionPopup);
+    admissionPopup.addEventListener('click',e=>{if(e.target===admissionPopup)closeAdmissionPopup()});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&admissionPopup.classList.contains('is-open'))closeAdmissionPopup()});
+    document.getElementById('admissionExplore').addEventListener('click',closeAdmissionPopup);
+    window.setTimeout(openAdmissionPopup,1100);
+
     const menuToggle=document.getElementById('menuToggle'),navlinks=document.getElementById('navlinks');
     menuToggle.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰'});
     navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navlinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰'}));
