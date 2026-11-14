@@ -29,64 +29,6 @@
     @media(max-width:700px){.container{width:min(100% - 34px,540px)}.topbar .container{justify-content:center}.topbar .toplinks{display:none}.nav{height:68px}.brand-mark{width:37px;height:37px}.brand-name{font-size:11px}.nav-actions>.btn{display:none}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:10px 22px 22px;border-bottom:1px solid var(--line);box-shadow:0 18px 25px rgba(16,28,45,.08)}.navlinks.open{display:grid;gap:0}.navlinks a{padding:13px 0;border-bottom:1px solid var(--line);font-size:13px}.hero,.hero-inner{min-height:680px}.hero:before{background:linear-gradient(90deg,rgba(9,20,34,.94),rgba(9,20,34,.68)),url("https://www.cosmoscollege.edu.np/_next/image?q=75&url=https%3A%2F%2Fwp.cosmoscollege.edu.np%2Fwp-content%2Fuploads%2F2026%2F07%2FDSC08372.png&w=3840") center/cover}.hero-inner{padding:60px 0 170px}.hero h1{font-size:clamp(45px,11.8vw,68px);line-height:.99;letter-spacing:-.07em;margin:20px 0 20px}.hero-copy>p{font-size:14px}.hero-meta .container{grid-template-columns:1fr 1fr}.metric{padding:13px 10px;border-bottom:1px solid rgba(255,255,255,.13)}.metric:first-child{padding-left:10px}.metric strong{font-size:22px}.metric span{font-size:9px}.section{padding:70px 0}.section-head{display:block;margin-bottom:28px}.section-head p{margin-top:15px}.intro-grid,.experience-grid,.admission-grid,.faq-grid,.story-grid{grid-template-columns:1fr;gap:34px}.intro-image{height:340px;margin-right:12px}.image-note{right:-12px;bottom:15px;padding:15px}.intro-points{gap:15px}.program-grid{grid-template-columns:1fr}.program-card{min-height:235px}.experience-photo{height:330px}.story-feature{min-height:330px}.story-mini{min-height:155px}.enquiry-card{padding:25px 20px}.footer-grid{grid-template-columns:1fr 1fr;gap:30px 20px}.footer-brand{grid-column:1/-1}.copyright{display:block;line-height:1.8}.copyright span{display:block}.faq-grid{gap:20px}}
 
 
-    /* Admission announcement popup */
-    .admission-pop{position:fixed;inset:0;z-index:150;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(5,13,23,.76);backdrop-filter:blur(5px)}
-    .admission-pop.is-open{display:flex;animation:admissionFade .25s ease both}
-    .admission-pop-card{position:relative;display:grid;grid-template-columns:.92fr 1.08fr;width:min(760px,100%);min-height:390px;background:#fff;box-shadow:0 28px 90px rgba(0,0,0,.32);overflow:hidden;animation:admissionRise .35s cubic-bezier(.2,.75,.25,1) both}
-    .admission-pop-visual{position:relative;min-height:100%;background:linear-gradient(0deg,rgba(8,21,37,.58),rgba(8,21,37,.08)),url("https://www.cosmoscollege.edu.np/_next/image?q=75&url=https%3A%2F%2Fwp.cosmoscollege.edu.np%2Fwp-content%2Fuploads%2F2026%2F07%2FDSC08372.png&w=3840") center 18%/cover}
-    .admission-pop-visual:after{content:"COSMOS COLLEGE";position:absolute;left:24px;bottom:22px;color:white;font:800 12px Manrope;letter-spacing:.15em}
-    .admission-pop-copy{padding:48px 38px 38px;display:flex;flex-direction:column;justify-content:center}
-    .admission-pop-kicker{display:inline-flex;align-self:flex-start;padding:7px 11px;background:#fff0f1;color:#c7192d;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
-    .admission-pop-copy h2{font:800 clamp(30px,4vw,43px)/1.05 Manrope;color:#171717;letter-spacing:-.055em;margin:18px 0 12px}
-    .admission-pop-copy h2 em{font-style:normal;color:#c7192d}
-    .admission-pop-copy p{font-size:13px;line-height:1.75;color:#626b76;margin:0 0 22px}
-    .admission-pop-actions{display:flex;gap:10px;flex-wrap:wrap}
-    .admission-pop-actions .btn{font-size:11px}
-    .admission-pop-close{position:absolute;right:13px;top:12px;width:36px;height:36px;border:0;border-radius:50%;background:#f1f2f3;color:#303943;font-size:23px;line-height:1;z-index:2}
-    .admission-pop-close:hover{background:#c7192d;color:#fff}
-    .admission-pop-note{font-size:10px!important;margin:16px 0 0!important;color:#89919b!important}
-    @keyframes admissionFade{from{opacity:0}to{opacity:1}}
-    @keyframes admissionRise{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
-    @media(max-width:600px){.chairman-showcase .chairman-feature{grid-template-columns:1fr;gap:18px}.chairman-showcase .chairman-feature img{width:100%;height:260px;object-position:top}.chairman-showcase{padding:42px 0}.chairman-showcase .container{gap:28px}.why-us{padding-top:48px;padding-bottom:48px}.admission-pop{padding:14px}.admission-pop-card{grid-template-columns:1fr;max-width:420px}.admission-pop-visual{min-height:155px}.admission-pop-visual:after{left:18px;bottom:15px}.admission-pop-copy{padding:26px 22px 24px}.admission-pop-copy h2{font-size:34px;margin:13px 0 9px}.admission-pop-copy p{font-size:12px;margin-bottom:17px}.admission-pop-actions{display:grid}.admission-pop-actions .btn{width:100%}}
-    @media(prefers-reduced-motion:reduce){.admission-pop.is-open,.admission-pop-card{animation:none}}
-
-    /* Refined chairman and welcome-message presentation */
-    .chairman-showcase{background:#f3f4f2;color:#171717;padding:76px 0 82px}
-    .chairman-showcase .chairman-feature{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:clamp(30px,6vw,76px);align-items:center;max-width:1050px;margin:0 auto;padding:0}
-    .chairman-portrait{position:relative;max-width:270px}
-    .chairman-portrait:before{content:"";position:absolute;inset:13px -13px -13px 13px;border:1px solid #c7192d;border-radius:18px}
-    .chairman-showcase .chairman-feature .chairman-portrait img{position:relative;display:block;width:100%;height:330px;object-fit:cover;object-position:top center;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,30,40,.13)}
-    .chairman-message{max-width:690px}
-    .chairman-kicker{display:inline-block;color:#c7192d;font-size:10px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
-    .chairman-showcase .chairman-feature h3{font:800 clamp(30px,4vw,48px)/1.08 Manrope;color:#171717;letter-spacing:-.055em;margin:15px 0 20px}
-    .chairman-showcase .chairman-feature p{font-size:clamp(15px,1.5vw,18px);line-height:1.9;color:#515b66;max-width:700px;margin:0}
-    .chairman-signoff{display:block;margin-top:25px;padding-top:17px;border-top:1px solid #d9ddda;color:#8a929a;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
-    .intro{background:#fff;padding-top:92px;padding-bottom:96px}
-    .intro-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(38px,7vw,90px)}
-    .intro-image{height:510px;border-radius:22px;overflow:hidden;background:#e9ecee}
-    .intro-image img{object-position:center center}
-    .image-note{right:18px;bottom:18px;border-radius:14px;box-shadow:0 12px 28px rgba(0,0,0,.13)}
-    .intro-copy{max-width:560px}
-    .intro-copy .eyebrow{margin-bottom:5px}
-    .intro-copy h2{font:800 clamp(36px,4.5vw,54px)/1.06 Manrope;letter-spacing:-.06em;margin:12px 0 22px;color:#171717}
-    .intro-copy p{font-size:15px;line-height:1.9;color:#59636e;margin:0 0 26px}
-    .intro-copy .btn{border-radius:999px;padding:15px 23px}
-    @media(max-width:700px){
-      .chairman-showcase{padding:58px 0 64px}
-      .chairman-showcase .chairman-feature{grid-template-columns:1fr;gap:30px}
-      .chairman-portrait{width:min(230px,78%);margin:0 auto 5px}
-      .chairman-showcase .chairman-feature .chairman-portrait img{height:285px}
-      .chairman-message{text-align:left}
-      .chairman-showcase .chairman-feature h3{font-size:36px}
-      .intro{padding-top:66px;padding-bottom:70px}
-      .intro-grid{gap:34px}
-      .intro-image{height:340px;margin:0;border-radius:18px}
-      .intro-copy h2{font-size:39px}
-      .intro-copy p{font-size:14px}
-    }
-
-
-
     /* Editorial layouts for the people, research and campus-life sections */
     .team-section{background:#f4f5f3;padding:96px 0 104px}
     .team-heading,.research-heading,.life-heading{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,88px);align-items:end;margin-bottom:48px}
@@ -374,48 +316,8 @@
 
   
 
-  <div class="admission-pop" id="admissionPopup" role="dialog" aria-modal="true" aria-labelledby="admissionPopupTitle" aria-describedby="admissionPopupDescription">
-    <div class="admission-pop-card">
-      <button class="admission-pop-close" id="admissionPopupClose" type="button" aria-label="Close admission announcement">×</button>
-      <div class="admission-pop-visual" role="img" aria-label="Cosmos College campus building"></div>
-      <div class="admission-pop-copy">
-        <span class="admission-pop-kicker">ADMISSIONS AND SCHOLARSHIPS</span>
-        <h2 id="admissionPopupTitle">ADMISSIONS AND SCHOLARSHIPS</h2>
-        <p id="admissionPopupDescription">To support our students, we offer a range of scholarships</p>
-        <div class="admission-pop-actions">
-          <a class="btn btn-gold" href="https://www.cosmoscollege.edu.np/enroll-now" target="_blank" rel="noopener">Apply Now</a>
-          <a class="btn btn-dark" href="https://www.cosmoscollege.edu.np/about" target="_blank" rel="noopener" id="admissionExplore">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script>
-
-    // Show the admissions announcement once per browser tab/session.
-    const admissionPopup=document.getElementById('admissionPopup');
-    const admissionPopupClose=document.getElementById('admissionPopupClose');
-    let admissionPopupOpener=null;
-    function openAdmissionPopup(){
-      if(!admissionPopup||sessionStorage.getItem('cosmosAdmissionPopupSeen')==='1')return;
-      admissionPopupOpener=document.activeElement;
-      admissionPopup.classList.add('is-open');
-      document.body.style.overflow='hidden';
-      sessionStorage.setItem('cosmosAdmissionPopupSeen','1');
-      admissionPopupClose.focus();
-    }
-    function closeAdmissionPopup(){
-      if(!admissionPopup)return;
-      admissionPopup.classList.remove('is-open');
-      document.body.style.overflow='';
-      if(admissionPopupOpener&&typeof admissionPopupOpener.focus==='function')admissionPopupOpener.focus();
-    }
-    admissionPopupClose.addEventListener('click',closeAdmissionPopup);
-    admissionPopup.addEventListener('click',e=>{if(e.target===admissionPopup)closeAdmissionPopup()});
-    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&admissionPopup.classList.contains('is-open'))closeAdmissionPopup()});
-    document.getElementById('admissionExplore').addEventListener('click',closeAdmissionPopup);
-    window.setTimeout(openAdmissionPopup,1100);
 
     // Replace failed remote images with a branded fallback instead of a broken-image icon.
     // Retry failed original WordPress media through the official Cosmos image
