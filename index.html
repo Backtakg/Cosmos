@@ -235,31 +235,21 @@
       .chairman-showcase .chairman-portrait{border-radius:16px}
     }
 
-    /* Clear, consistent rounded panel for Reach Out to Us */
-    #contact .footer-grid>.footer-col:last-child{
-      background:#242a31;
-      border:1px solid rgba(255,255,255,.22);
-      border-radius:22px;
-      padding:24px;
-      min-width:0;
-      overflow:hidden;
-      box-shadow:0 12px 28px rgba(0,0,0,.16);
-    }
-    #contact .footer-grid>.footer-col:last-child h4{margin:0 0 16px}
-    #contact .footer-grid>.footer-col:last-child p,
-    #contact .footer-grid>.footer-col:last-child a{
-      display:block;
-      max-width:100%;
-      overflow-wrap:anywhere;
-      word-break:break-word;
-    }
-    @media(max-width:640px){
-      #contact .footer-grid>.footer-col:last-child{
-        width:100%;
-        border-radius:18px;
-        padding:20px;
-        box-sizing:border-box;
-      }
+    /* Reach Out to Us application form */
+    .reach-out-section{background:#f5f6f8;padding:76px 0}
+    .reach-out-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:34px;align-items:start}
+    .reach-out-copy h2{font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-.045em;margin:12px 0 16px}
+    .reach-out-copy p{color:#59616b;line-height:1.7;max-width:420px}
+    .application-form-frame{background:#fff;border:1px solid #e4e7eb;border-radius:22px;overflow:hidden;box-shadow:0 16px 40px rgba(20,30,45,.08);min-width:0}
+    .application-form-frame iframe{display:block;width:100%;height:620px;border:0;background:#fff}
+    .application-form-fallback{padding:18px 22px;border-top:1px solid #edf0f2;font-size:14px}
+    .application-form-fallback a{color:#075b9b;text-decoration:underline}
+    @media(max-width:760px){
+      .reach-out-section{padding:54px 0}
+      .reach-out-layout{grid-template-columns:minmax(0,1fr);gap:22px}
+      .reach-out-copy h2{font-size:clamp(32px,9vw,44px)}
+      .application-form-frame{border-radius:17px}
+      .application-form-frame iframe{height:680px}
     }
 </style>
 </head>
@@ -350,6 +340,19 @@
       <a class="resource-card" href="https://wp.cosmoscollege.edu.np/wp-content/uploads/2026/06/Academic-Calender-2026-spring-.jpg" target="_blank" rel="noopener"><span class="resource-icon" aria-hidden="true">04</span><strong>Academic Calender 2026 Spring</strong><span class="resource-arrow" aria-hidden="true">↗</span></a>
       <a class="resource-card" href="https://www.cosmoscollege.edu.np/login" target="_blank" rel="noopener"><span class="resource-icon" aria-hidden="true">05</span><strong>Log in</strong><span class="resource-arrow" aria-hidden="true">↗</span></a>
     </div></div></section>
+    <section class="reach-out-section" id="reach-out">
+      <div class="container reach-out-layout">
+        <div class="reach-out-copy">
+          <span class="eyebrow">CONTACT</span>
+          <h2>Reach Out to Us</h2>
+          <p>Application Form</p>
+        </div>
+        <div class="application-form-frame">
+          <iframe src="https://wp.cosmoscollege.edu.np/innovative-form/" title="Cosmos College Application Form" loading="lazy"></iframe>
+          <div class="application-form-fallback">If the form does not appear, <a href="https://wp.cosmoscollege.edu.np/innovative-form/" target="_blank" rel="noopener">open the Application Form</a>.</div>
+        </div>
+      </div>
+    </section>
     <section class="section faq" id="faq"><div class="container"><div class="section-head"><div><h2>Frequently Asked Questions (FAQs)</h2></div></div><div class="faq-list">
       <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>1. Why is Cosmos College considered one of the best private colleges in Nepal?</span><span>+</span></button><div class="faq-a">Cosmos College of Management and Technology (CCMT) is recognized for its quality education, own permanent campus, modern infrastructure, updated curricula, experienced professors and industry experts, excellent university results, industry collaborations, and vibrant student life. For more than 25 years, Cosmos has been committed to preparing students with the knowledge, skills, and values required to excel in their professional careers and contribute to society.</div></div>
       <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>2. Why should students choose Cosmos College for higher education?</span><span>+</span></button><div class="faq-a">Students choose Cosmos because of its student-centered learning environment, modern teaching methods, updated curricula, experienced faculty, smart classrooms, well-equipped laboratories, industry exposure, active student clubs, sports facilities, and strong academic support. The college focuses not only on academic excellence but also on innovation, leadership, and holistic development.</div></div>
