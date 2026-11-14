@@ -225,6 +225,15 @@
       .chairman-showcase .chairman-kicker{font-size:clamp(21px,6.3vw,30px);line-height:1.18;letter-spacing:-.025em;margin:0 0 16px;overflow-wrap:anywhere}
       .chairman-showcase .chairman-message p{font-size:16px;line-height:1.65;overflow-wrap:anywhere}
     }
+
+    /* Consistent smooth corners for the chairman feature */
+    .chairman-showcase{border-radius:0}
+    .chairman-showcase .chairman-feature img{border-radius:18px!important}
+    .chairman-showcase .chairman-portrait{border-radius:18px;overflow:hidden}
+    @media(max-width:640px){
+      .chairman-showcase .chairman-feature img{border-radius:16px!important}
+      .chairman-showcase .chairman-portrait{border-radius:16px}
+    }
 </style>
 </head>
 <body>
