@@ -227,7 +227,8 @@
     }
 
     /* Consistent smooth corners for the chairman feature */
-    .chairman-showcase{border-radius:0}
+    .chairman-showcase{border-radius:24px;overflow:hidden}
+    @media(max-width:640px){.chairman-showcase{border-radius:20px}}
     .chairman-showcase .chairman-feature img{border-radius:18px!important}
     .chairman-showcase .chairman-portrait{border-radius:18px;overflow:hidden}
     @media(max-width:640px){
