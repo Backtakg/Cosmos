@@ -37,3 +37,14 @@ Open `index.html` in a browser, or serve the repository with any static file ser
 - Images are illustrative and should be replaced with approved campus, faculty, laboratory and student photography.
 - The enquiry form prepares an email in the visitor's email application. It does not store or transmit submissions to a backend.
 - No admission, ERP, payment, student portal or college system integration is implemented.
+
+## Brand system
+
+The visual palette follows the published Cosmos College logo:
+- Cosmos red: `#C7192D`
+- Descriptor blue: `#075B9B`
+- Orbital yellow: `#F2B629`
+- Charcoal and white neutrals for contrast and readability
+
+The wordmark uses a CSS orbital motif and red/blue/yellow typography. The site also includes responsive navigation and layouts, scroll-reveal motion, subtle hover transitions, and reduced-motion support.
+
