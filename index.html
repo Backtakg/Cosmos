@@ -50,6 +50,42 @@
     @media(max-width:600px){.chairman-showcase .chairman-feature{grid-template-columns:1fr;gap:18px}.chairman-showcase .chairman-feature img{width:100%;height:260px;object-position:top}.chairman-showcase{padding:42px 0}.chairman-showcase .container{gap:28px}.why-us{padding-top:48px;padding-bottom:48px}.admission-pop{padding:14px}.admission-pop-card{grid-template-columns:1fr;max-width:420px}.admission-pop-visual{min-height:155px}.admission-pop-visual:after{left:18px;bottom:15px}.admission-pop-copy{padding:26px 22px 24px}.admission-pop-copy h2{font-size:34px;margin:13px 0 9px}.admission-pop-copy p{font-size:12px;margin-bottom:17px}.admission-pop-actions{display:grid}.admission-pop-actions .btn{width:100%}}
     @media(prefers-reduced-motion:reduce){.admission-pop.is-open,.admission-pop-card{animation:none}}
 
+    /* Refined chairman and welcome-message presentation */
+    .chairman-showcase{background:#f3f4f2;color:#171717;padding:76px 0 82px}
+    .chairman-showcase .chairman-feature{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:clamp(30px,6vw,76px);align-items:center;max-width:1050px;margin:0 auto;padding:0}
+    .chairman-portrait{position:relative;max-width:270px}
+    .chairman-portrait:before{content:"";position:absolute;inset:13px -13px -13px 13px;border:1px solid #c7192d;border-radius:18px}
+    .chairman-showcase .chairman-feature .chairman-portrait img{position:relative;display:block;width:100%;height:330px;object-fit:cover;object-position:top center;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,30,40,.13)}
+    .chairman-message{max-width:690px}
+    .chairman-kicker{display:inline-block;color:#c7192d;font-size:10px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+    .chairman-showcase .chairman-feature h3{font:800 clamp(30px,4vw,48px)/1.08 Manrope;color:#171717;letter-spacing:-.055em;margin:15px 0 20px}
+    .chairman-showcase .chairman-feature p{font-size:clamp(15px,1.5vw,18px);line-height:1.9;color:#515b66;max-width:700px;margin:0}
+    .chairman-signoff{display:block;margin-top:25px;padding-top:17px;border-top:1px solid #d9ddda;color:#8a929a;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+    .intro{background:#fff;padding-top:92px;padding-bottom:96px}
+    .intro-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(38px,7vw,90px)}
+    .intro-image{height:510px;border-radius:22px;overflow:hidden;background:#e9ecee}
+    .intro-image img{object-position:center center}
+    .image-note{right:18px;bottom:18px;border-radius:14px;box-shadow:0 12px 28px rgba(0,0,0,.13)}
+    .intro-copy{max-width:560px}
+    .intro-copy .eyebrow{margin-bottom:5px}
+    .intro-copy h2{font:800 clamp(36px,4.5vw,54px)/1.06 Manrope;letter-spacing:-.06em;margin:12px 0 22px;color:#171717}
+    .intro-copy p{font-size:15px;line-height:1.9;color:#59636e;margin:0 0 26px}
+    .intro-copy .btn{border-radius:999px;padding:15px 23px}
+    @media(max-width:700px){
+      .chairman-showcase{padding:58px 0 64px}
+      .chairman-showcase .chairman-feature{grid-template-columns:1fr;gap:30px}
+      .chairman-portrait{width:min(230px,78%);margin:0 auto 5px}
+      .chairman-showcase .chairman-feature .chairman-portrait img{height:285px}
+      .chairman-message{text-align:left}
+      .chairman-showcase .chairman-feature h3{font-size:36px}
+      .intro{padding-top:66px;padding-bottom:70px}
+      .intro-grid{gap:34px}
+      .intro-image{height:340px;margin:0;border-radius:18px}
+      .intro-copy h2{font-size:39px}
+      .intro-copy p{font-size:14px}
+    }
+
+
 
     /* Editorial layouts for the people, research and campus-life sections */
     .team-section{background:#f4f5f3;padding:96px 0 104px}
@@ -256,7 +292,7 @@
       <figure class="facility-card"><img src="https://wp.cosmoscollege.edu.np/wp-content/uploads/2025/07/galley.webp" alt="Collaborative Spaces" loading="lazy"><figcaption><strong>Collaborative Spaces</strong></figcaption></figure>
       <figure class="facility-card"><img src="https://wp.cosmoscollege.edu.np/wp-content/uploads/2025/07/cosmos.webp" alt="CosmoZone" loading="lazy"><figcaption><strong>CosmoZone</strong></figcaption></figure>
     </div></div></section>
-    <section class="section stories" id="stories"><div class="container"><section class="chairman-showcase" aria-label="Welcome Message from the Chairman"><div class="container"><img class="chairman-group-photo" src="https://wp.cosmoscollege.edu.np/wp-content/uploads/2026/07/DSC08372.png" alt="Cosmos College team" loading="lazy"><div class="chairman-feature"><img src="https://wp.cosmoscollege.edu.np/wp-content/uploads/2025/07/chairman.webp" alt="Welcome Message from the Chairman" loading="lazy"><div><h3>Welcome Message from the Chairman</h3><p>I personally want to appreciate the ability of students to integrate knowledge across different disciplines, skills of adaptation and sensitivity to core human values. I firmly believe in excellence and discipline, which, at Cosmos College is not an act but a habit.</p></div></div></div></section>
+    <section class="section stories" id="stories"><div class="container"><section class="chairman-showcase" aria-label="Welcome Message from the Chairman"><div class="chairman-feature"><div class="chairman-portrait"><img src="https://wp.cosmoscollege.edu.np/wp-content/uploads/2025/07/chairman.webp" alt="Chairman of Cosmos College" loading="lazy"></div><div class="chairman-message"><span class="chairman-kicker">WELCOME MESSAGE FROM THE CHAIRMAN</span><h3>Welcome Message from the Chairman</h3><p>I personally want to appreciate the ability of students to integrate knowledge across different disciplines, skills of adaptation and sensitivity to core human values. I firmly believe in excellence and discipline, which, at Cosmos College is not an act but a habit.</p><span class="chairman-signoff">Cosmos College of Management and Technology</span></div></div></section>
       <div class="section-head"><div><h2>Hear From Our Alumnis</h2></div></div>
       <div class="alumni-strip" role="group" aria-label="Select an alumnus">
         <button class="alumni-person is-active" type="button" data-alumni="usha" aria-pressed="true"><img src="https://wp.cosmoscollege.edu.np/wp-content/uploads/2026/07/Usha-Khatiwada-crop.jpeg" alt="" loading="lazy"><span><strong>Usha Khatiwada</strong></span></button>
