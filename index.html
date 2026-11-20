@@ -426,9 +426,15 @@
       if(!story)return;
       alumniButtons.forEach(item=>{const active=item===button;item.classList.toggle('is-active',active);item.setAttribute('aria-pressed',String(active))});
       alumniTitle.textContent=story.title;
+      alumniTitle.hidden=!story.title;
+      alumniTitle.style.display=story.title?'':'none';
       alumniText.textContent=story.text;
-      if(story.url){alumniLink.href=story.url;alumniLink.hidden=false}else alumniLink.hidden=true;
+      alumniLink.hidden=!story.url;
+      alumniLink.style.display=story.url?'':'none';
+      if(story.url)alumniLink.href=story.url;
     }));
+    // Initialize the panel with Usha's story; only her story has a heading and Learn More link.
+    document.querySelector('[data-alumni="usha"]')?.click();
     const toast=document.getElementById('toast');let toastTimer;function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),4200)}
     document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.querySelector(a.getAttribute('href'));if(target&&target.id==='contact'){} }));
 
